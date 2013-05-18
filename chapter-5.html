@@ -1,971 +1,174 @@
+<h1>Chapter 5 <span class="block">Understanding and Meeting Web Accessibility Standards</h1>
+<h2>Introduction</h2>
+<p>In this chapter we'll look at specific features within Microsoft and HiSoftware products that help people meet international Web accessibility standards or that help people with disabilities benefit from accessible Web content.We'll also show examples of how to test Web content to determine if it is accessible.</p>
+<p>This chapter is organized into 12 sections, one for each of the Guidelines in the W3C's Web Content Accessibility Guidelines 2.0. While this structure reflects that of WCAG 2.0, this chapter does not explain the W3C's work. For more information, please refer to the WCAG 2.0 Overview (http://www.w3.org/WAI/intro/wcag20.php).</p>
+<p>Microsoft actively participates in European and global efforts to develop and harmonize ICT accessibility standards, including WCAG 2.0. Microsoft believes that standards harmonization will result in more accessible products that are delivered through a more economically efficient market.Similar to most IT companies, Microsoft builds products and services for a global marketplace and strives to meet the needs of people with disabilities in all of its markets. (From http://www.access-board.gov/sec508/refresh/report/microsoft.htm)</p>
+<h2>Principle 1: Making Information Perceivable</h2>
+<p>This principle lays the foundation for the other three: end users must be able to perceive information before they are expected to interact with it. Text alternatives provide an easy and flexible way to meet this principle since text is easily made available via Braille or speech. </p>
+<h3>Guideline 1.1 Text Alternatives</h3>
+<blockquote>
+<p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language</p>
+</blockquote>
 
-<h1>Chapter 5<br>
-Understanding and Meeting Web Accessibility Standards</h1>
-
-<h2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.4in;text-indent:-.4in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .4in'>Introduction</h2>
-
-<p class=MsoNormal>In this chapter we'll look at specific features within
-Microsoft and HiSoftware products that help people meet international Web accessibility
-standards or that help people with disabilities benefit from accessible Web content.<span
-style='mso-spacerun:yes'> </span>We'll also show examples of how to test Web content
-to determine if it is accessible.</p>
-
-<p class=MsoNormal>This chapter is organized into 12 sections, one for each of
-the Guidelines in the W3C's Web Content Accessibility Guidelines 2.0. While
-this structure reflects that of WCAG 2.0, this chapter does not explain the
-W3C's work. For more information, please refer to the WCAG 2.0 Overview
-(http://www.w3.org/WAI/intro/wcag20.php).</p>
-
-<p class=MsoNormal>Microsoft actively participates in European and global efforts
-to develop and harmonize ICT accessibility standards, including WCAG 2.0.
-Microsoft believes that standards harmonization will result in more accessible
-products that are delivered through a more economically efficient market.<span
-style='mso-spacerun:yes'> </span>Similar to most IT companies, Microsoft
-builds products and services for a global marketplace and strives to meet the
-needs of people with disabilities in all of its markets. (From
-http://www.access-board.gov/sec508/refresh/report/microsoft.htm)</p>
-
-<h2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.4in;text-indent:-.4in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .4in'>Principle 1: Making Information Perceivable</h2>
-
-<p class=MsoNormal>This principle lays the foundation for the other three: end users
-must be able to perceive information before they are expected to interact with
-it. Text alternatives provide an easy and flexible way to meet this principle
-since text is easily made available via Braille or speech. </p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 1.1 Text Alternatives</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Provide text alternatives for any non-text content so
-that it can be changed into other forms people need, such as large print,
-braille, speech, symbols or simpler language</p>
-
-</div>
-
-<p class=MsoNormal><i>Non-text content</i> is anything that isn't text. This
-includes images, sounds, and videos.<span style='mso-spacerun:yes'> </span>It
-even includes art created using text. For example, colon hyphen right
-parentheses creates a smiley face :-) which is not text, it's an emoticon.
-In this case, the picture is not perceivable to someone who cannot see and
-the meaning needs to be provided via a <i>text alternative. </i>Text
-alternatives are handy because they can be translated to Braille or to speech
-via assistive technologies.<span style='mso-spacerun:yes'> </span>Therefore,
-the visual information can now be perceived with your ears (audio) or fingers
-(Braille).</p>
-
-<h4 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.6in;text-indent:-.6in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .6in'>Providing Text Alternatives</h4>
-
-<p class=MsoNormal>Features in Microsoft products help people who create Web sites
-provide text alternatives. For example, in Figure 1, when inserting an image
-into a Web document with Expression Web, the author is prompted to add a text
-alternative. </p>
-
-<p class=MsoBodyText><o:wrapblock><v:shapetype id="_x0000_t202" coordsize="21600,21600"
-  o:spt="202" path="m,l,21600r21600,l21600,xe">
-  <v:stroke joinstyle="miter"/>
-  <v:path gradientshapeok="t" o:connecttype="rect"/>
- </v:shapetype><v:shape id="Text_x0020_Box_x0020_8" o:spid="_x0000_s1033"
-  type="#_x0000_t202" style='position:absolute;margin-left:0;margin-top:0;
-  width:312.15pt;height:121.05pt;z-index:251660288;visibility:visible;
-  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
-  mso-wrap-distance-left:0;mso-wrap-distance-top:0;mso-wrap-distance-right:0;
-  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
-  mso-position-horizontal-relative:text;mso-position-vertical:absolute;
-  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
-  mso-width-relative:page;mso-height-relative:page;v-text-anchor:top'
-  o:gfxdata="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
-AA==
-" stroked="f">
-  <v:textbox inset="0,0,0,0">
-   <![if !mso]>
-   <table cellpadding=0 cellspacing=0 width="100%">
-    <tr>
-     <td><![endif]>
-     <div>
-     <p class=MsoCaption align=center style='text-align:center'><span
-     style='mso-no-proof:yes'><v:shapetype id="_x0000_t75" coordsize="21600,21600"
-      o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
-      stroked="f">
-      <v:stroke joinstyle="miter"/>
-      <v:formulas>
-       <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-       <v:f eqn="sum @0 1 0"/>
-       <v:f eqn="sum 0 0 @1"/>
-       <v:f eqn="prod @2 1 2"/>
-       <v:f eqn="prod @3 21600 pixelWidth"/>
-       <v:f eqn="prod @3 21600 pixelHeight"/>
-       <v:f eqn="sum @0 0 1"/>
-       <v:f eqn="prod @6 1 2"/>
-       <v:f eqn="prod @7 21600 pixelWidth"/>
-       <v:f eqn="sum @8 21600 0"/>
-       <v:f eqn="prod @7 21600 pixelHeight"/>
-       <v:f eqn="sum @10 21600 0"/>
-      </v:formulas>
-      <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
-      <o:lock v:ext="edit" aspectratio="t"/>
-     </v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1027" type="#_x0000_t75"
-      style='width:283.5pt;height:87.75pt;visibility:visible;mso-wrap-style:square'
-      filled="t">
-      <v:imagedata src="ms-web-accessibility-handbook_files/image001.png"
-       o:title=""/>
-     </v:shape></span>Figure 1: Microsoft Expression Web prompting for
-     alternate text and long description for an image</p>
-     </div>
-     <![if !mso]></td>
-    </tr>
-   </table>
-   <![endif]></v:textbox>
-  <w:wrap type="topAndBottom"/>
- </v:shape></o:wrapblock><br style='mso-ignore:vglayout' clear=ALL>
-</p>
-
-<p class=MsoNormal>This is an example of <i>Accessible by Default</i>an
-approach that Microsoft is integrating into its products. What this means for
-the end user is that Web sites just work because their browsers and assistive
-technologies have what they need to create a meaningful and usable experience.
-For the person creating Web content, this means accessibility is integrated
-into their Web development processes and tools.<span style='mso-spacerun:yes'>
-</span>When accessibility is integrated into development tools, authors can
-more easily make accessible choices and, in some cases, the tool automatically
-produces accessible Web content without the author doing anything special.<span
-style='mso-spacerun:yes'> </span>We will see more examples of the <i>Accessible
-by Default</i> approach throughout this chapter.</p>
-
+<p><i>Non-text content</i> is anything that isn't text. This includes images, sounds, and videos.It even includes art created using text. For example, colon hyphen right parentheses creates a smiley face :-) which is not text, it's an emoticon. In this case, the picture is not perceivable to someone who cannot see and the meaning needs to be provided via a <i>text alternative. </i>Text alternatives are handy because they can be translated to Braille or to speech via assistive technologies.Therefore, the visual information can now be perceived with your ears (audio) or fingers (Braille).</p>
+<h4>Providing Text Alternatives</h4>
+<p>Features in Microsoft products help people who create Web sites provide text alternatives. For example, in Figure 1, when inserting an image into a Web document with Expression Web, the author is prompted to add a text alternative. </p>
+<figure>
+      <img src="i/ms-expression-web-prompting-for-alt-text-and-longdesc-for-an-image.png" />
+      <figcaption>Figure 1: Microsoft Expression Web prompting for alternate text and long description for an image</figcaption>
+     </figure>
+     
+<p>This is an example of <i>Accessible by Default</i>an approach that Microsoft is integrating into its products. What this means for the end user is that Web sites just work because their browsers and assistive technologies have what they need to create a meaningful and usable experience. For the person creating Web content, this means accessibility is integrated into their Web development processes and tools.When accessibility is integrated into development tools, authors can more easily make accessible choices and, in some cases, the tool automatically produces accessible Web content without the author doing anything special.We will see more examples of the <i>Accessible by Default</i> approach throughout this chapter.</p>
 <h3>Guideline 1.2 Time-based Media</h3>
 
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
+<blockquote>
+  <p>Provide alternatives for time-based media</p>
+</blockquote>
+<p>In addition to a short text alternative, <i>time-based media</i> such as videos and audio recordings need transcripts or synchronized alternatives.A <i>transcript</i> is a text document that conveys all of the dialog and significant sounds from a video.<i>Synchronized alternatives</i> include captions and audio descriptions. <i>Captions</i> appear on the screen at the same time as words that are spoken and significant sounds are made. Captions are used by people who have difficulty hearing speech and sounds. A variety of tools are available to caption videos, including HiSoftware's Hi-Caption Studio. Microsofts Expression Encoder can add captions to a media file and export the end-result to Silverlight.</p>
 
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Provide alternatives for time-based media</p>
+<img src="ms-web-accessibility-handbook_files/image002.png" />
+<p>Figure 2: Turning on the viewing of captions in Windows Media Player</p>
 
-</div>
+<p><i>Audio descriptions</i> are provided by a narrator who describes visual events that cannot be understood through sound alone.Audio descriptions are useful to people who have a hard time seeing the visual content of the time-based media.For example, in the following dialog, it isn't clear why Jennifer suddenly changes her mind:</p>
 
-<p class=MsoNormal>In addition to a short text alternative, <i>time-based media</i>
-such as videos and audio recordings need transcripts or synchronized
-alternatives.<span style='mso-spacerun:yes'> </span>A <i>transcript</i> is a
-text document that conveys all of the dialog and significant sounds from a
-video.<span style='mso-spacerun:yes'> </span><i>Synchronized alternatives</i>
-include captions and audio descriptions. <i>Captions</i> appear on the screen
-at the same time as words that are spoken and significant sounds are made.
-Captions are used by people who have difficulty hearing speech and sounds. A
-variety of tools are available to caption videos, including HiSoftware's
-Hi-Caption Studio. <span style='mso-spacerun:yes'></span>Microsofts
-Expression Encoder can add captions to a media file and export the end-result
-to Silverlight.</p>
+<p>James: &quot;How is your day so far?&quot;</p>
+<p>Jennifer: &quot;My day is going quite well. . . .Oh! Now it seems to be a little worse.&quot;</p>
+<p>When we add an audio description, it becomes clearer what has happened with Jennifer:</p>
+<p>James: &quot;How is your day so far?&quot;</p>
+<p>Jennifer: &quot;My day is going quite well. . . .&quot;</p>
+<p>Audio Description: A passing waiter spills a pitcher of ice water down Jennifer's back.</p>
+<p>Jennifer: &quot;Oh! Now it seems to be a little worse.&quot;</p>
+<p>There are two ways to provide captions: <i>open</i> and <i>closed</i>. Open captions are displayed all the time, for everyone viewing the video. Closed captions are only displayed when the user sets his or her preferences to display them.Figure 2 shows setting the preference Windows Media Player to show captions if available.</p>
+<p>Audio descriptions are most commonly provided as open meaning that the narration is included in the soundtrack to the video and everyone hears it.Historically, there wasn't enough bandwidth to download multiple audio tracks along with a video track. But this is changing and now we're starting to see the option to turn audio descriptions on and off as well.</p>
 
-<p class=MsoNormal><v:shape id="Text_x0020_Box_x0020_9" o:spid="_x0000_s1032"
- type="#_x0000_t202" style='position:absolute;margin-left:239.1pt;margin-top:2.9pt;
- width:251.55pt;height:243.45pt;z-index:251661312;visibility:visible;
- mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
- mso-wrap-distance-left:14.4pt;mso-wrap-distance-top:14.4pt;
- mso-wrap-distance-right:14.4pt;mso-wrap-distance-bottom:14.4pt;
- mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
- mso-position-vertical:absolute;mso-position-vertical-relative:text;
- mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
- mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
-5AUAAAAA
-" stroked="f">
- <v:textbox inset="0,0,0,0">
-  <![if !mso]>
-  <table cellpadding=0 cellspacing=0 width="100%">
-   <tr>
-    <td><![endif]>
-    <div>
-    <p class=MsoCaption align=center style='text-align:center'><span
-    style='mso-no-proof:yes'><v:shape id="Picture_x0020_2" o:spid="_x0000_i1026"
-     type="#_x0000_t75" style='width:251.25pt;height:177.75pt;visibility:visible;
-     mso-wrap-style:square' filled="t">
-     <v:imagedata src="ms-web-accessibility-handbook_files/image002.png"
-      o:title=""/>
-    </v:shape></span>Figure 2: Turning on the viewing of captions in Windows
-    Media Player</p>
-    </div>
-    <![if !mso]></td>
-   </tr>
-  </table>
-  <![endif]></v:textbox>
- <w:wrap type="square" side="largest"/>
-</v:shape><i>Audio descriptions</i> are provided by a narrator who describes
-visual events that cannot be understood through sound alone.<span
-style='mso-spacerun:yes'> </span>Audio descriptions are useful to people who
-have a hard time seeing the visual content of the time-based media.<span
-style='mso-spacerun:yes'> </span>For example, in the following dialog, it
-isn't clear why Jennifer suddenly changes her mind:</p>
+<h3>Guideline 1.3 Adaptable</h3>
 
-<p class=MsoNormal style='margin-left:.5in'>James: &quot;How is your day so
-far?&quot;</p>
+<blockquote>
+  <p>Create content that can be presented in different ways (for example simpler layout) without losing information or structure</p>
+</blockquote>
+<p>Good visual design guides the reader's eye through a document or application.When creating Web content, you can use the underlying structure to create an auditory design or tactile design that mimics the same flow of information presented visually.</p>
+<p>A Web author creates <i>structural landmarks</i> by using specific HTML elements. Landmarks include headings, lists, tables, and paragraphs. Figure 3 shows how to use Live Writer to mark a string of text as a heading </p>
+<p>A person looking at the page will be drawn to the large font size and other visually characteristics that distinguish headings from other text.Scanning the headings can help someone understand the overall structure and content of a page. A person listening to a page (or using their fingers to read the page via Braille) can instruct his or her assistive technology to navigate the landmarks to gain an understanding of the overall structure and content of the page. This is in contrast to reading a page line-by-line.</p>
 
-<p class=MsoNormal style='margin-left:.5in'>Jennifer: &quot;My day is going
-quite well. . . .Oh! Now it seems to be a little worse.&quot;</p>
+<figure>
+  <img src="i/using-live-writer-to-indicate-text-as-a-heading.png" />
+  <figcaption>Figure 3: Using Live Writer to indicate that text is a heading</figcaption>
+</figure>
+<p>One way to determine if content has appropriate landmarks is to look at the page without the<i> style sheet</i>.Figure 4 shows two views of microsoft.com.On the left is how the page looks when the style sheet is used.The image on the right shows how the page looks when the style sheet is not used.While we use HTML to describe the structure of Web pages, we use Cascading Style Sheets (CSS) to describe the style the colors, fonts, and placement of objects in a Web page.</p>
+<figure>
+  <img src="i/changing-style-selection-inspect-underlying-structure-of-a-web-page-with-ie8.png" />
+  <figcaption>Figure 4: Changing style selection using Internet Explorer 8 to inspect underlying structure of a Web page</figcaption>
+</figure>
+<p>When you investigate a Web page without style sheets, what are you looking for to determine if structural landmarks are present?Well, does the page still make sense?Are the paragraphs of text still in chunks?Are links running into each other or are they organized in bulleted lists?Does the order make sense or do you jump all over the page?</p>
+<p>This guideline describes the semantics that need to be infused into your HTML to ensure that structure and pathways through the structure are perceivable.We'll learn later, in Guideline 2.4, about additional landmarks that should be provided and how to ensure that users can navigate through the structure in an easy and meaningful way.</p>
 
-<p class=MsoNormal>When we add an audio description, it becomes clearer what
-has happened with Jennifer:</p>
-
-<p class=MsoNormal style='margin-left:.5in'>James: &quot;How is your day so
-far?&quot;</p>
-
-<p class=MsoNormal style='margin-left:.5in'>Jennifer: &quot;My day is going
-quite well. . . .&quot;</p>
-
-<p class=MsoNormal style='margin-left:.5in'>Audio Description: A passing waiter
-spills a pitcher of ice water down Jennifer's back.</p>
-
-<p class=MsoNormal style='margin-left:.5in'>Jennifer: &quot;Oh! Now it seems to
-be a little worse.&quot;</p>
-
-<p class=MsoNormal>There are two ways to provide captions: <i>open</i> and <i>closed</i>.
-Open captions are displayed all the time, for everyone viewing the video.
-Closed captions are only displayed when the user sets his or her preferences to
-display them.<span style='mso-spacerun:yes'> </span>Figure 2 shows setting the
-preference Windows Media Player to show captions if available.</p>
-
-<p class=MsoNormal>Audio descriptions are most commonly provided as open
-meaning that the narration is included in the soundtrack to the video and
-everyone hears it.<span style='mso-spacerun:yes'> </span>Historically, there
-wasn't enough bandwidth to download multiple audio tracks along with a video
-track. But this is changing and now we're starting to see the option to turn
-audio descriptions on and off as well.</p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 1.3 Adaptable</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Create content that can be presented in different ways
-(for example simpler layout) without losing information or structure</p>
-
-</div>
-
-<p class=MsoNormal>Good visual design guides the reader's eye through a
-document or application.<span style='mso-spacerun:yes'> </span>When creating Web
-content, you can use the underlying structure to create an auditory design or
-tactile design that mimics the same flow of information presented
-visually.<span style='mso-spacerun:yes'> </span></p>
-
-<p class=MsoNormal>A Web author creates <i>structural landmarks</i> by using
-specific HTML elements. Landmarks include headings, lists, tables, and
-paragraphs. Figure 3 shows how to use Live Writer to mark a string of text as a
-heading </p>
-
-<p class=MsoNormal>A person looking at the page will be drawn to the large font
-size and other visually characteristics that distinguish headings from other
-text.<span style='mso-spacerun:yes'> </span>Scanning the headings can help
-someone understand the overall structure and content of a page. A person
-listening to a page (or using their fingers to read the page via Braille) can
-instruct his or her assistive technology to navigate the landmarks to gain an
-understanding of the overall structure and content of the page. This is in
-contrast to reading a page line-by-line.</p>
-
-<p class=MsoCaption><o:wrapblock><v:shape id="Picture_x0020_4" o:spid="_x0000_s1031"
-  type="#_x0000_t75" style='position:absolute;margin-left:0;margin-top:6.05pt;
-  width:237pt;height:174.75pt;z-index:251656192;visibility:visible;
-  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
-  mso-wrap-distance-left:0;mso-wrap-distance-top:0;mso-wrap-distance-right:0;
-  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
-  mso-position-horizontal-relative:text;mso-position-vertical:absolute;
-  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
-  mso-width-relative:page;mso-height-relative:page' filled="t" stroked="t"
-  strokeweight=".05pt">
-  <v:imagedata src="ms-web-accessibility-handbook_files/image003.png" o:title=""/>
-  <w:wrap type="topAndBottom"/>
- </v:shape></o:wrapblock><br style='mso-ignore:vglayout' clear=ALL>
-Figure 3: Using Live Writer to indicate that text is a heading</p>
-
-<p class=MsoNormal>One way to determine if content has appropriate landmarks is
-to look at the page without the<i> style sheet</i>.<span
-style='mso-spacerun:yes'> </span>Figure 4 shows two views of
-microsoft.com.<span style='mso-spacerun:yes'> </span>On the left is how the
-page looks when the style sheet is used.<span style='mso-spacerun:yes'>
-</span>The image on the right shows how the page looks when the style sheet is
-not used.<span style='mso-spacerun:yes'> </span>While we use HTML to describe
-the structure of Web pages, we use Cascading Style Sheets (CSS) to describe the
-stylethe colors, fonts, and placement of objects in a Web page.<span
-style='mso-spacerun:yes'> </span></p>
-
-<p class=MsoCaption><o:wrapblock><v:shape id="Picture_x0020_3" o:spid="_x0000_s1030"
-  type="#_x0000_t75" style='position:absolute;margin-left:0;margin-top:6.05pt;
-  width:463.85pt;height:345.4pt;z-index:251655168;visibility:visible;
-  mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
-  mso-wrap-distance-left:0;mso-wrap-distance-top:0;mso-wrap-distance-right:0;
-  mso-wrap-distance-bottom:0;mso-position-horizontal:center;
-  mso-position-horizontal-relative:text;mso-position-vertical:absolute;
-  mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
-  mso-width-relative:page;mso-height-relative:page' filled="t" stroked="t"
-  strokeweight=".05pt">
-  <v:imagedata src="ms-web-accessibility-handbook_files/image004.png" o:title=""/>
-  <w:wrap type="topAndBottom"/>
- </v:shape></o:wrapblock><br style='mso-ignore:vglayout' clear=ALL>
-Figure 4: Changing style selection using Internet Explorer 8 to inspect
-underlying structure of a Web page</p>
-
-<p class=MsoNormal>When you investigate a Web page without style sheets, what
-are you looking for to determine if structural landmarks are present?<span
-style='mso-spacerun:yes'> </span>Well, does the page still make sense?<span
-style='mso-spacerun:yes'> </span>Are the paragraphs of text still in
-chunks?<span style='mso-spacerun:yes'> </span>Are links running into each
-other or are they organized in bulleted lists?<span style='mso-spacerun:yes'>
-</span>Does the order make sense or do you jump all over the page?</p>
-
-<p class=MsoNormal>This guideline describes the semantics that need to be
-infused into your HTML to ensure that structure and pathways through the
-structure are perceivable.<span style='mso-spacerun:yes'> </span>We'll learn
-later, in Guideline 2.4, about additional landmarks that should be provided and
-how to ensure that users can navigate through the structure in an easy and
-meaningful way.</p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 1.4 Distinguishable</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Make it easier for users to see and hear content
-including separating foreground from background</p>
-
-</div>
-
-<p class=MsoNormal>When color is used to convey information, some people may
-miss out on that information.<span style='mso-spacerun:yes'> </span>For
-example, a form gathers a person's billing information and indicates, All
-fields marked in red are required.<span style='mso-spacerun:yes'> </span>Not
-everyone sees red as red.<span style='mso-spacerun:yes'> </span>For some, red
-appears more like yellow.<span style='mso-spacerun:yes'> </span>People who are
-blind will not see any color.<span style='mso-spacerun:yes'> </span>What
-should you do?<span style='mso-spacerun:yes'> </span>Provide a redundant cue,
-like an asterisk. However, you will need to tell people what the asterisk
-means.<span style='mso-spacerun:yes'> </span></p>
-
-<p class=MsoNormal>A new technology that is quickly gathering support in
-browsers and assistive technologies is the W3C Web Accessibility Initiative's
-Accessible Rich Internet Applications Specification (WAI-ARIA). Microsoft has
-contributed to the development of this specification and Windows Internet
-Explorer 8 is one of the first browsers to implement the specification.<span
-style='mso-spacerun:yes'> </span>WAI-ARIA provides a new vocabulary to
-describe the objects in Web applications and make them more accessible. In the
-case of the required field, there is a WAI-ARIA role required.<span
-style='mso-spacerun:yes'> </span>When this is used, people no longer need to
-be told what asterisk means or to guess, their tools will know that it is
-required and can tell them.</p>
-
-<p class=MsoNormal>When authors use color combinations that are difficult to
-read, Internet Explorer allows people to override authors' colors and use
-combinations that they find easier to read.<span style='mso-spacerun:yes'>
-</span>Figure 5 shows the Internet Explorer dialog box that allows users to
-choose colors for text, backgrounds, and links. </p>
-
-<p class=MsoCaption align=center style='text-align:center'><o:wrapblock><v:shape
-  id="Picture_x0020_5" o:spid="_x0000_s1029" type="#_x0000_t75" style='position:absolute;
-  left:0;text-align:left;margin-left:0;margin-top:.05pt;width:209.3pt;height:274.95pt;
-  z-index:251657216;visibility:visible;mso-wrap-style:square;
-  mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:0;
-  mso-wrap-distance-top:0;mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
-  mso-position-horizontal:center;mso-position-horizontal-relative:text;
-  mso-position-vertical:absolute;mso-position-vertical-relative:text;
-  mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
-  mso-height-relative:page' filled="t" stroked="t" strokeweight=".05pt">
-  <v:imagedata src="ms-web-accessibility-handbook_files/image005.png" o:title=""/>
-  <w:wrap type="topAndBottom"/>
- </v:shape></o:wrapblock><br style='mso-ignore:vglayout' clear=ALL>
-Figure 5: Setting colors in Internet Explorer. Colors is an option on the
-Internet Options panel</p>
-
-<p class=MsoNormal>Similarly, Windows has a setting, <i>high contrast mode</i>,
-which will display every window and button in a Windows' application in a
-limited palette of colors. </p>
-
-<p class=MsoNormal>Not only can text be displayed as Braille or spoken aloud by
-a screen reader, but onscreen it can be resized. Internet Explorer has two
-options for making text easier to read:<span style='mso-spacerun:yes'>
-</span>zoom and text size.<span style='mso-spacerun:yes'> </span>Zoom is
-useful for enlarging buttons and banners that are <i>images of text</i>someone
-has used a graphics program like Adobe's Photoshop or Microsofts Expression Design
-to use a specific font or create an unusual effect that is not possible with
-style sheets. On the other hand, if the text is text, then an end user can make
-it larger by setting the <i>text size</i> to Larger or Largest.<span
-style='mso-spacerun:yes'> </span></p>
-
+<h3>Guideline 1.4 Distinguishable</h3>
+<blockquote>
+  <p>Make it easier for users to see and hear content including separating foreground from background</p>
+</blockquote>
+<p>When color is used to convey information, some people may miss out on that information.For example, a form gathers a person's billing information and indicates, All fields marked in red are required.Not everyone sees red as red.For some, red appears more like yellow.People who are blind will not see any color.What should you do?Provide a redundant cue, like an asterisk. However, you will need to tell people what the asterisk means.</p>
+<p>A new technology that is quickly gathering support in browsers and assistive technologies is the W3C Web Accessibility Initiative's Accessible Rich Internet Applications Specification (WAI-ARIA). Microsoft has contributed to the development of this specification and Windows Internet Explorer 8 is one of the first browsers to implement the specification.WAI-ARIA provides a new vocabulary to describe the objects in Web applications and make them more accessible. In the case of the required field, there is a WAI-ARIA role required.When this is used, people no longer need to be told what asterisk means or to guess, their tools will know that it is required and can tell them.</p>
+<p>When authors use color combinations that are difficult to read, Internet Explorer allows people to override authors' colors and use combinations that they find easier to read.Figure 5 shows the Internet Explorer dialog box that allows users to choose colors for text, backgrounds, and links. </p>
+<figure>
+  <img src="i/setting-colors-in-ie-colors-is-an-option-on-the-internet-options-panel.png" />
+  <figcaption>Figure 5: Setting colors in Internet Explorer. Colors is an option on the Internet Options panel</figcaption>
+</figure>
+<p>Similarly, Windows has a setting, <i>high contrast mode</i>, which will display every window and button in a Windows' application in a limited palette of colors. </p>
+<p>Not only can text be displayed as Braille or spoken aloud by a screen reader, but onscreen it can be resized. Internet Explorer has two options for making text easier to read:zoom and text size.Zoom is useful for enlarging buttons and banners that are <i>images of text</i>someone has used a graphics program like Adobe's Photoshop or Microsofts Expression Design to use a specific font or create an unusual effect that is not possible with style sheets. On the other hand, if the text is text, then an end user can make it larger by setting the <i>text size</i> to Larger or Largest.</p>
 <h2>Principle 2: Making User Interfaces Easy to Operate</h2>
-
-<p class=MsoNormal>After someone can perceive all of the objects and
-information in a Web page, they can begin to interact with it.<span
-style='mso-spacerun:yes'> </span>Whereas the first principle is ensuring that
-people have access to the information using the sense they prefer (vision,
-hearing, feeling), the guidelines in this principle are organized around
-allowing people to use the input device of their choice, such as a <span
-style='mso-spacerun:yes'></span>mouse, a keyboard, or a microphone (for voice
-input).</p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 2.1 Keyboard Accessible</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Make all functionality available from a keyboard</p>
-
-</div>
-
-<p class=MsoNormal>Many Web applications are designed to be operated by a
-mouse, but there are many people who are not able to use the mouse.<span
-style='mso-spacerun:yes'> </span>For many Web applications that are designed
-only for mouse input, this means menus do not pop-up to show submenus or that
-filled in forms cannot be submitted.</p>
-
-<p class=MsoNormal>Adding keyboard support to an application can be more
-complicated than adding mouse support.<span style='mso-spacerun:yes'> </span>A
-mouse is a single switch that is usually only modified with a few keys. A mouse
-can click on, drag with or hover over an object.<span
-style='mso-spacerun:yes'> </span>A keyboard, on the other hand, has 101 keys
-that can be combined in a variety of ways and these combinations act
-differently between browsers and across operating systems.<span
-style='mso-spacerun:yes'> </span>An additional layer of complexity is due to
-the fact that many assistive technologies are operated via key combinations.<span
-style='mso-spacerun:yes'> </span>This is another great place to apply <i>Accessible
-by Default</i>. Ensuring that the building blocks of Web application have
-keyboard-support built in is the best way to ensure Web applications are
-keyboard accessible.<span style='mso-spacerun:yes'> </span>To this end,
-Silverlight 2.0 controls have built-in keyboard support.</p>
-
-<p class=MsoBodyText><o:p>&nbsp;</o:p></p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 2.2 Enough Time</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Provide users enough time to read and use content</p>
-
-</div>
-
-<p class=MsoNormal>Because you don't know how long someone will need to read, understand
-or interact with content, ensure that if your application has a time limit the
-user has control over how often the content updates or how long they have to
-complete a task.<span style='mso-spacerun:yes'> </span>There are a few
-exceptions to this guideline. For example, if the task is a real-time event,
-such as an auction, and it isn't possible to provide an alternative, then you
-do not need to provide user control over the event. In some cases, this control
-is provided by the browser.<span style='mso-spacerun:yes'> </span>For example,
-Internet Explorer allows the user to pause most animations. Most media players,
-including the Accessible Media Player and Windows Media Player have pause
-buttons.<span style='mso-spacerun:yes'> </span></p>
-
-<p class=MsoListParagraphCxSpFirst style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>If you are developing an application that is
-frequently updated with new content, you might consider one of the following
-options: Allow the user to turn off the time limit by setting a user
+<p>After someone can perceive all of the objects and information in a Web page, they can begin to interact with it.Whereas the first principle is ensuring that people have access to the information using the sense they prefer (vision, hearing, feeling), the guidelines in this principle are organized around allowing people to use the input device of their choice, such as a mouse, a keyboard, or a microphone (for voice input).</p>
+<h3>Guideline 2.1 Keyboard Accessible</h3>
+<blockquote>
+  <p>Make all functionality available from a keyboard</p>
+</blockquote>
+<p>Many Web applications are designed to be operated by a mouse, but there are many people who are not able to use the mouse.For many Web applications that are designed only for mouse input, this means menus do not pop-up to show submenus or that filled in forms cannot be submitted.</p>
+<p>Adding keyboard support to an application can be more complicated than adding mouse support.A mouse is a single switch that is usually only modified with a few keys. A mouse can click on, drag with or hover over an object.A keyboard, on the other hand, has 101 keys that can be combined in a variety of ways and these combinations act differently between browsers and across operating systems.An additional layer of complexity is due to the fact that many assistive technologies are operated via key combinations.This is another great place to apply <i>Accessible by Default</i>. Ensuring that the building blocks of Web application have keyboard-support built in is the best way to ensure Web applications are keyboard accessible.To this end, Silverlight 2.0 controls have built-in keyboard support.</p>
+<h3>Guideline 2.2 Enough Time</h3>
+<blockquote>
+  <p>Provide users enough time to read and use content</p>
+</blockquote>
+<p>Because you don't know how long someone will need to read, understand or interact with content, ensure that if your application has a time limit the user has control over how often the content updates or how long they have to complete a task.There are a few exceptions to this guideline. For example, if the task is a real-time event, such as an auction, and it isn't possible to provide an alternative, then you do not need to provide user control over the event. In some cases, this control is provided by the browser.For example, Internet Explorer allows the user to pause most animations. Most media players, including the Accessible Media Player and Windows Media Player have pause buttons.</p>
+<ul>
+  <li>If you are developing an application that is frequently updated with new content, you might consider one of the following options: Allow the user to turn off the time limit by setting a user
 preference;</p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Provide the user a way to set the time limit
+  <li>Provide the user a way to set the time limit
 themselves, through a user preference or some other mechanism;<span
-style='mso-hansi-font-family:Symbol'><o:p></o:p></span></p>
+style='mso-hansi-font-family:Symbol'><o:p></o:p></p>
+  <li>Warn the user with a pop-up that time is about to expire and let them extend it by pressing "ok" to extend the time limit.</li>
+</ul>
+<h3>Guideline 2.3 Seizures</h3>
+<blockquote>
+  <p>Do not design content in a way that is known to cause seizures</p>
+</blockquote>
+<p>WCAG 2.0 Success Criteria are divided into three Levels.In most cases, organizations will build policy around the fist two levels: Level A and Level AA. Level AAA is the most difficult to achieve, but in some cases, easier to understand.This is the case with this guideline. We suggest teaching developers to avoid creating content that flashes more than three times per second.If that is too restrictive for someone or they push back for some other reason, refer them to the definition of <i>general flash and red flash thresholds</i> (http://www.w3.org/TR/WCAG20/#general-thresholddef).</p>
+<p>You can also refer them to the Photosensitive Epilepsy Analysis Tool (PEAT) available at: http://trace.wisc.edu/peat/</p>
+<h3>Guideline 2.4 Navigable</h3>
+<blockquote>
+  <p>Provide ways to help users navigate, find content and determine where they are </p>
+</blockquote>
+<p>In Guideline 1.3 we discuss the importance of providing structural landmarks that can help people navigate through Web content to emulate the eye scanning through a document.Why is order important? Consider a recipe for cooking pasta:first you boil some water, add dry pasta, and then let it boil for about 10 minutes.That is a meaningful sequence.If it were mixed up somehow, such that you read, add dry pasta, boil for about 10 minutes, boil some water you could end up with burnt pasta.</p>
+<p>One way to test that your document or application has a meaningful sequence is to use a free tool called <i>inspect32</i>.If you choose show highlight rectangle and disable watch cursor from the toolbar, as you tab through the links on a page, inspect32 will highlight the links as you tab through them.We'll talk about inspect32 again in Guideline 4.1 and we'll learn more about the rest of the information that inspect32 makes available.</p>
+<p>This guideline also suggests providing additional pathways and secret doors that will help people more easily find their way to specific pieces of content on a page.People accessing the Web via a screen reader will often get a sense of the structure and contents of a Web page by reading through a list of links on the page. Ensuring that link text makes sense when read out of context is an important strategy to help people gain a quick overview.</p>
+<p>This means that a page full of links that say Click here or More won't be as useful as using a more descriptive link.This usually happens on portal sites where there are many options to choose from:each description of an item is followed by a More link. When someone creates a list on one of these pages, all they hear or see is More. <span
+class=GramE>More. More. In Figure 6, the Microsoft Enable site starts each description with a descriptive link then provides additional information about each story.</p>
+<figure>
+  <img src="ms-web-accessibility-handbook_files/image006.png" />
+  <figcaption>Figure 6: Example of link text that makes sense when read out of context</figcaption>
+</figure>
+<p>The link list for this part of the Microsoft site is:</p>
+<ul>
+  <li>Inclusive Innovation Showroom Opens to Demonstrate Accessibility</li>
+  <li>Sales manager and busy mom utilizes magnification and screen reader</li>
+  <li>Active retiree makes her computer easier to see and use</li>
+  <li>Banker enjoys urban exploration with a Pocket PC and screen reader</li>
+  <li>Medical researcher, card shark, and speech recognition fan</li>
+</ul>
+  
 
-<p class=MsoListParagraphCxSpLast style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span style='mso-hansi-font-family:Symbol'>Warn
-the user with a pop-up that time is about to expire and let them extend it by
-pressing </span><span style='font-family:"Times New Roman","serif";mso-ascii-font-family:
-Calibri;mso-hansi-font-family:Symbol;mso-bidi-font-family:Arial'></span><span
-style='mso-hansi-font-family:Symbol'>ok</span><span style='font-family:"Times New Roman","serif";
-mso-ascii-font-family:Calibri;mso-hansi-font-family:Symbol;mso-bidi-font-family:
-Arial'></span><span style='mso-hansi-font-family:Symbol'> to extend the time
-limit. </span></p>
+<h2>Principle 3: Making Information Understandable</h2>
+<p>Now that your content is perceivable to a variety of people and they can operate the controls, can they understand the results of those operations?</p>
+<h3>Guideline 3.1 Readable</h3>
+<blockquote>
+  <p>Make text content readable and understandable</p>
+</blockquote>
+<figure>
+  <img src="i/example-of-intellisense-a-list-of-language-codes-in-expression-web.png" />
+  <figcaption>Figure 7: An example of IntelliSense, a list of language codes in Expression Web</figcaption>
+</figure>
+<p>At Level A, this means indicating the language of a document.In HTML, an author can indicate language by using a 2 to 3 character code such as en for English or fr for French.Figure 7 shows an example of <i>IntelliSense</i>a technique that prompts the user with a list of what they might like to do next. In this case, an author is presented with a list of language codes.</p>
+<p>Higher levels of this guideline provide information about making text easier to understand.This includes using the correct spelling for words, following grammatical rules, and checking the reading level of your text.Many tools, such as Microsoft Word, incorporate spellchecking into the interfacetypically red squiggles underline misspelled words or an end user can go through a list of misspelled words one at a time.</p>
+<p>Reading level tests (or readability tests) look at the average number of syllables per word and the average number of words per sentence. It is not a perfect measure of readability, but they can provide a good general indication of the reading level of your content.</p>
 
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 2.3 Seizures</h3>
+<h3>Guideline 3.2 Predictable</h3>
+<blockquote>
+  <p>Make Web pages appear and operate in predictable ways</p>
+</blockquote>
+<p>This basically means: don't surprise the user.If you want the user to move the focus from one object to another, do it in a way that they understand what is happening and only move focus when someone is expecting it.When an application is unpredictable or the user loses track of where they are or what they've been doing, at best case they get frustrated and worse case they are disoriented and unable to continue what they were doing.Here are some general design tips for ensuring users find your application predictable and enjoyable to use:</p>
+<ul>
+  <li>Don't have the interface change too much as the user moves focus either with the mouse or especially by the keyboard.Some of this is ok, like submenus displaying on mouse hover, but opening a new window or changing focus to something else are too disorienting to users.</p>
+  <li>Similarly, as a user begins to interact with an object, don't cause too many things to happen unless the user is well aware of what is about the change.For example, if someone begins to select a country from a drop down menu, let them select the country and move to the next control before changing the interface based on their selection.</li>
+  <li>If you have a navigation panel or some other set of objects that appear throughout a Web site, keeping them in the same order and with a similar appearance will give users a handrail that they can refer to throughout the site.Some sites allow users to customize the order in which objects appear on a pagethat's fine, but ensure that the order that the user chooses is honored on pages throughout the site.</li>
+</ul>
+<h3>Guideline 3.3 Input Assistance</h3>
+<blockquote>
+  <p>Help users avoid and correct mistakes </p>
+</blockquote>
+<p>As we mentioned before, <i>Accessible by Default</i> techniques such as <i>IntelliSense</i> can help content creators make Web applications accessible.These techniques also help make the Web more usable for everyone. For example, Figure 8 shows that someone has tried to search for Web content accessbility guidelnes using Microsoft Live Search.Accessibility and Guidelines have been misspelled, and Live Search shows the results for the correctly spelled words as well as an option for the user to see results for the misspelled words.</p>
+<figure>
+  <img src="i/live-search-results-for-spelling-showing-correct-and-incorrect-spellings.png" />
+  <figcaption>Figure 8: Live Search showing search results for the correct spelling of a search term as well as the misspelled phrase</figcaption>
+</figure>
+<p>Other examples include the accelerators and other predictive features in Internet Explorer 8, such as visual search and the smart address bar.</p>
+<h2>Principle 4: Making Information Work Reliably with User Tools</h2>
+<p>Of all of the guidelines that are worth the transition to WCAG 2.0 from WCAG 1.0, this Principle is the key.The core of interactive Web application accessibility is covered in Principle 4.We mentioned WAI-ARIA earlier, and its here that it really shines. </p>
 
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Do not design content in a way that is known to cause
-seizures</p>
-
-</div>
-
-<p class=MsoNormal>WCAG 2.0 Success Criteria are divided into three
-Levels.<span style='mso-spacerun:yes'> </span>In most cases, organizations
-will build policy around the fist two levels: Level A and Level AA. Level AAA
-is the most difficult to achieve, but in some cases, easier to understand.<span
-style='mso-spacerun:yes'> </span>This is the case with this guideline. We
-suggest teaching developers to avoid creating content that flashes more than
-three times per second.<span style='mso-spacerun:yes'> </span>If that is too
-restrictive for someone or they push back for some other reason, refer them to
-the definition of <i>general flash and red flash thresholds</i>
-(http://www.w3.org/TR/WCAG20/#general-thresholddef).<span
-style='mso-spacerun:yes'> </span></p>
-
-<p class=MsoNormal>You can also refer them to the Photosensitive Epilepsy
-Analysis Tool (PEAT) available at: http://trace.wisc.edu/peat/</p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 2.4 Navigable</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Provide ways to help users <span class=GramE>navigate,</span>
-find content and determine where they are </p>
-
-</div>
-
-<p class=MsoNormal>In Guideline 1.3 we discuss the importance of providing
-structural landmarks that can help people navigate through Web content to
-emulate the eye scanning through a document.<span style='mso-spacerun:yes'>
-</span>Why is order important? Consider a recipe for cooking pasta:<span
-style='mso-spacerun:yes'> </span>first you boil some water, add dry pasta, and
-then let it boil for about 10 minutes.<span style='mso-spacerun:yes'>
-</span>That is a meaningful sequence.<span style='mso-spacerun:yes'> </span>If
-it were mixed up somehow, such that you read, add dry pasta, boil for about 10
-minutes, <span class=GramE>boil</span> some water you could end up with burnt
-pasta.</p>
-
-<p class=MsoNormal>One way to test that your document or application has a
-meaningful sequence is to use a free tool called <i>inspect32</i>.<span
-style='mso-spacerun:yes'> </span>If you choose show highlight rectangle and disable
-watch cursor from the toolbar, as you tab through the links on a page,
-inspect32 will highlight the links as you tab through them.<span
-style='mso-spacerun:yes'> </span>We'll talk about inspect32 again in Guideline
-4.1 and we'll learn more about the rest of the information that inspect32 makes
-available.</p>
-
-<p class=MsoNormal>This guideline also suggests providing additional pathways
-and secret doors that will help people more easily find their way to specific
-pieces of content on a page.<span style='mso-spacerun:yes'> </span>People
-accessing the Web via a screen reader will often get a sense of the structure
-and contents of a Web page by reading through a list of links on the page.
-Ensuring that link text makes sense when read out of context is an important
-strategy to help people gain a quick overview.<span style='mso-spacerun:yes'>
-</span></p>
-
-<p class=MsoNormal>This means that a page full of links that say Click here
-or More won't be as useful as using a more descriptive link.<span
-style='mso-spacerun:yes'> </span>This usually happens on portal sites where
-there are many options to choose from:<span style='mso-spacerun:yes'>
-</span>each description of an item is followed by a More link. When someone
-creates a list on one of these pages, all they hear or see is More. <span
-class=GramE>More.</span> More. In Figure 6, the Microsoft Enable site starts
-each <o:wrapblock><v:shape id="Picture_x0020_6" o:spid="_x0000_s1028" type="#_x0000_t75"
-  style='position:absolute;margin-left:88.55pt;margin-top:48.75pt;width:315.15pt;
-  height:248.95pt;z-index:251658240;visibility:visible;mso-wrap-style:square;
-  mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:0;
-  mso-wrap-distance-top:0;mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
-  mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
-  mso-position-vertical:absolute;mso-position-vertical-relative:text;
-  mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
-  mso-height-relative:page' filled="t" stroked="t" strokeweight=".05pt">
-  <v:imagedata src="ms-web-accessibility-handbook_files/image006.png" o:title=""/>
-  <w:wrap type="topAndBottom"/>
- </v:shape></o:wrapblock><br style='mso-ignore:vglayout' clear=ALL>
-description with a descriptive link then provides additional information about
-each story. </p>
-
-<p class=MsoCaption align=center style='text-align:center'>Figure 6: Example of
-link text that makes sense when read out of context</p>
-
-<p class=MsoNormal>The link list for this part of the Microsoft site is:</p>
-
-<p class=MsoListParagraphCxSpFirst style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Inclusive Innovation Showroom Opens to
-Demonstrate Accessibility</p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Sales manager and busy mom utilizes
-magnification and screen reader</p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Active retiree makes her computer easier to see
-and use</p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Banker enjoys urban exploration with a Pocket PC
-and screen reader</p>
-
-<p class=MsoListParagraphCxSpLast style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Medical researcher, card shark, and speech
-recognition fan</p>
-
-<h2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.4in;text-indent:-.4in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .4in'><o:p>&nbsp;</o:p></h2>
-
-<h2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.4in;text-indent:-.4in;line-height:normal;page-break-before:always;mso-pagination:
-none;mso-hyphenate:none;tab-stops:list .4in'>Principle 3: Making information
-understandable</h2>
-
-<p class=MsoNormal>Now that your content is perceivable to a variety of people
-and they can operate the controls, can they understand the results of those
-operations?<span style='mso-spacerun:yes'> </span></p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 3.1 Readable</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Make text content readable and understandable</p>
-
-</div>
-
-<p class=MsoNormal><v:shape id="Text_x0020_Box_x0020_7" o:spid="_x0000_s1027"
- type="#_x0000_t202" style='position:absolute;margin-left:12.95pt;margin-top:20.9pt;
- width:148.15pt;height:192.1pt;z-index:251659264;visibility:visible;
- mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
- mso-wrap-distance-left:14.4pt;mso-wrap-distance-top:14.4pt;
- mso-wrap-distance-right:14.4pt;mso-wrap-distance-bottom:14.4pt;
- mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
- mso-position-vertical:absolute;mso-position-vertical-relative:text;
- mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
- mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
-" strokeweight=".05pt">
- <v:textbox inset="1.4pt,1.4pt,1.4pt,1.4pt">
-  <![if !mso]>
-  <table cellpadding=0 cellspacing=0 width="100%">
-   <tr>
-    <td><![endif]>
-    <div>
-    <p class=MsoCaption align=center style='text-align:center'><span
-    style='mso-no-proof:yes'><v:shape id="Picture_x0020_3" o:spid="_x0000_i1025"
-     type="#_x0000_t75" style='width:142.5pt;height:141.75pt;visibility:visible;
-     mso-wrap-style:square' filled="t">
-     <v:imagedata src="ms-web-accessibility-handbook_files/image007.png"
-      o:title=""/>
-    </v:shape></span>Figure 7: An example of IntelliSense, a list of language
-    codes in Expression Web</p>
-    </div>
-    <![if !mso]></td>
-   </tr>
-  </table>
-  <![endif]></v:textbox>
- <w:wrap type="square" side="largest"/>
-</v:shape>At Level A, this means indicating the language of a document.<span
-style='mso-spacerun:yes'> </span>In HTML, an author can indicate language by
-using a 2 to 3 character code such as en for English or fr for French.<span
-style='mso-spacerun:yes'> </span>Figure 7 shows an example of <i>IntelliSense</i>a
-technique that prompts the user with a list of what they might like to do next.
-In this case, an author is presented with a list of language codes.</p>
-
-<p class=MsoNormal>Higher levels of this guideline provide information about
-making text easier to understand.<span style='mso-spacerun:yes'> </span>This
-includes using the correct spelling for words, following grammatical rules, and
-checking the reading level of your text.<span style='mso-spacerun:yes'>
-</span>Many tools, such as Microsoft Word, incorporate spellchecking into the
-interfacetypically red squiggles underline misspelled words or an end user can
-go through a list of misspelled words one at a time.</p>
-
-<p class=MsoNormal>Reading level tests (or readability tests) look at the
-average number of syllables per word and the average number of words per
-sentence. It is not a perfect measure of readability, but they can provide a
-good general indication of the reading level of your content.</p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 3.2 Predictable</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Make Web pages appear and operate in predictable ways</p>
-
-</div>
-
-<p class=MsoNormal>This basically means: don't surprise the user.<span
-style='mso-spacerun:yes'> </span>If you want the user to move the focus from
-one object to another, do it in a way that they understand what is happening
-and only move focus when someone is expecting it.<span
-style='mso-spacerun:yes'> </span>When an application is unpredictable or the
-user loses track of where they are or what they've been doing, at best case
-they get frustrated and worse case they are disoriented and unable to continue
-what they were doing.<span style='mso-spacerun:yes'> </span>Here are some
-general design tips for ensuring users find your application predictable and
-enjoyable to use:<span style='mso-spacerun:yes'> </span></p>
-
-<p class=MsoListParagraphCxSpFirst style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Don't have the interface change too much as the
-user moves focus either with the mouse or especially by the keyboard.<span
-style='mso-spacerun:yes'> </span>Some of this is ok, like submenus displaying
-on mouse hover, but opening a new window or changing focus to something else
-are too disorienting to users.<span style='mso-spacerun:yes'> </span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Similarly, as a user begins to interact with an
-object, don't cause too many things to happen unless the user is well aware of
-what is about the change.<span style='mso-spacerun:yes'> </span>For example,
-if someone begins to select a country from a drop down menu, let them select
-the country and move to the next control before changing the interface based on
-their selection.<span style='mso-spacerun:yes'> </span></p>
-
-<p class=MsoListParagraphCxSpLast style='mso-list:l6 level1 lfo11'><![if !supportLists]><span
-style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol'><span style='mso-list:Ignore'><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>If you have <span class=GramE>a navigation</span>
-panel or some other set of objects that appear throughout a Web site, keeping
-them in the same order and with a similar appearance will give users a
-handrail that they can refer to throughout the site.<span
-style='mso-spacerun:yes'> </span>Some sites allow users to customize the order
-in which objects appear on a pagethat's fine, but ensure that the order that
-the user chooses is honored on pages throughout the site.</p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 3.3 Input Assistance</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Help users avoid and correct mistakes </p>
-
-</div>
-
-<p class=MsoNormal>As we mentioned before, A<i>ccessible by Default</i>
-techniques such as <i>IntelliSense</i> can help content creators make Web applications
-accessible.<span style='mso-spacerun:yes'> </span>These techniques also help
-make the Web more usable for everyone. For example, Figure 8 shows that someone
-has tried to search for Web content accessbility guidelnes using Microsoft
-Live Search.<span style='mso-spacerun:yes'> </span>Accessibility and
-Guidelines have been misspelled, and Live Search shows the results for the
-correctly spelled words as well as an option for the user to see results for
-the misspelled words.</p>
-
-<p class=MsoCaption align=center style='text-align:center'><o:wrapblock><v:shape
-  id="Picture_x0020_2" o:spid="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
-  left:0;text-align:left;margin-left:0;margin-top:6.05pt;width:454.5pt;
-  height:38.55pt;z-index:251654144;visibility:visible;mso-wrap-style:square;
-  mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:0;
-  mso-wrap-distance-top:0;mso-wrap-distance-right:0;mso-wrap-distance-bottom:0;
-  mso-position-horizontal:center;mso-position-horizontal-relative:text;
-  mso-position-vertical:absolute;mso-position-vertical-relative:text;
-  mso-width-percent:0;mso-height-percent:0;mso-width-relative:page;
-  mso-height-relative:page' filled="t" stroked="t" strokeweight=".05pt">
-  <v:imagedata src="ms-web-accessibility-handbook_files/image008.png" o:title=""/>
-  <w:wrap type="topAndBottom"/>
- </v:shape></o:wrapblock><br style='mso-ignore:vglayout' clear=ALL>
-Figure 8: Live Search showing search results for the correct spelling of a
-search term as well as the misspelled phrase</p>
-
-<p class=MsoNormal>Other examples include the accelerators and other predictive
-features in Internet Explorer 8, such as visual search and the smart address
-bar. </p>
-
-<h2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.4in;text-indent:-.4in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .4in'>Principle 4: Making Information Work Reliably with User
-Tools</h2>
-
-<p class=MsoNormal>Of all of the guidelines that are worth the transition to
-WCAG 2.0 from WCAG 1.0, this Principle is the key.<span
-style='mso-spacerun:yes'> </span>The core of interactive Web application
-accessibility is covered in Principle 4.<span style='mso-spacerun:yes'>
-</span>We mentioned WAI-ARIA earlier, and <span class=GramE>its</span> here
-that it really shines. </p>
-
-<h3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
-.5in;text-indent:-.5in;line-height:normal;mso-pagination:none;mso-hyphenate:
-none;tab-stops:list .5in'>Guideline 4.1 Compatible</h3>
-
-<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
-mso-border-bottom-alt:solid #4F81BD .5pt;padding:0in 0in 4.0pt 0in;margin-left:
-.65in;margin-right:.65in'>
-
-<p class=MsoIntenseQuote style='margin-top:10.0pt;margin-right:0in;margin-bottom:
-14.0pt;margin-left:0in'>Maximize compatibility with current and future user
-agents, including assistive technologies</p>
-
-</div>
-
-<p class=MsoNormal>Part of making applications work with assistive technologies
-is how you communicate with them.<span style='mso-spacerun:yes'> </span><span
-class=GramE>An accessibility</span> Application Programming Interface (API) is
-the language that an application uses to communicate with an assistive
-technology.<span style='mso-spacerun:yes'> </span>APIs provide the vocabulary
-for an application to describe what role an object plays in an interface (a
-button or a checkbox), what the state of the object is (is the checkbox checked?),
-and what you can do to an object (push a button, check a checkbox).<span
-style='mso-spacerun:yes'> </span>APIs also allow an application to tell the
-assistive technology, My content has updated. Here's what has changed.<span
-style='mso-spacerun:yes'> </span>The assistive technology can then determine
-how and when to tell the end user about the changes.</p>
-
-<p class=MsoNormal>Silverlight applications and Internet Explorer both use APIs
-to communicate with assistive technologies.<span style='mso-spacerun:yes'>
-</span>Internet Explorer was the first browser to expose HTML elements to the
-Microsoft Active Accessibility Interface and is one of the first browsers to
-implement WAI-ARIA to extend that support.<span style='mso-spacerun:yes'>
-</span>Microsoft continues to work with the W3C to standardize the mapping of
-HTML information to accessibility APIs.</p>
-
-<p class=MsoNormal>One way to test how well an application communicates with an
-assistive technology is to use insepct32a free tool from Microsoft. <span
-style='mso-spacerun:yes'></span>What sorts of information should you look for?<span
-style='mso-spacerun:yes'> </span>If something looks like a checkbox, is it
-identified as a checkbox or is identified as something else, like a graphic?<span
-style='mso-spacerun:yes'> </span>If it is a checkbox, can you tell if it is
-checked or not checked?<span style='mso-spacerun:yes'> </span>These are just
-two examples of the types of information you can learn about a user interface
-element in an application.<span style='mso-spacerun:yes'> </span>With WAI-ARIA,
-the amount of information available about an HTML widget is much richer. <span
-style='mso-spacerun:yes'></span>A similar tool is available to inspect
-accessibility information in Silverlight applications. Its called UIAVerify
-and is also freely available from Microsoft.</p>
-
-<p class=MsoNormal>Another important aspect of this guideline is ensuring that
-the HTML used to create a web page is written in accordance with
-standards.<span style='mso-spacerun:yes'> </span>This is what people mean when
-they talk about valid codeit is HTML that has been run through an automatic
-checker to ensure it meets the language standards.<span
-style='mso-spacerun:yes'> </span>This is another example where <i
-style='mso-bidi-font-style:normal'>Accessible by Default</i> can have a huge
-impact.<span style='mso-spacerun:yes'> </span>Expression Web, Live Writer, and
-other Microsoft tools make it easy for content creators to generate valid code
-and also make it easy to test for and correct validation errors;<span
-style='mso-spacerun:yes'> </span>in some cases, the code produced by these
-tools automatically validates, requiring nothing further from an end user.</p>
+<h3>Guideline 4.1 Compatible</h3>
+<blockquote>
+  <p>Maximize compatibility with current and future user agents, including assistive technologies</p>
+</blockquote>
+<p>Part of making applications work with assistive technologies is how you communicate with them. An accessibility Application Programming Interface (API) is the language that an application uses to communicate with an assistive technology.APIs provide the vocabulary for an application to describe what role an object plays in an interface (a button or a checkbox), what the state of the object is (is the checkbox checked?), and what you can do to an object (push a button, check a checkbox).APIs also allow an application to tell the assistive technology, My content has updated. Here's what has changed.The assistive technology can then determine how and when to tell the end user about the changes.</p>
+<p>Silverlight applications and Internet Explorer both use APIs to communicate with assistive technologies.Internet Explorer was the first browser to expose HTML elements to the Microsoft Active Accessibility Interface and is one of the first browsers to implement WAI-ARIA to extend that support.Microsoft continues to work with the W3C to standardize the mapping of HTML information to accessibility APIs.</p>
+<p>One way to test how well an application communicates with an assistive technology is to use insepct32a free tool from Microsoft. What sorts of information should you look for?If something looks like a checkbox, is it identified as a checkbox or is identified as something else, like a graphic?If it is a checkbox, can you tell if it is checked or not checked?These are just two examples of the types of information you can learn about a user interface element in an application.With WAI-ARIA, the amount of information available about an HTML widget is much richer. A similar tool is available to inspect accessibility information in Silverlight applications. Its called UIAVerify and is also freely available from Microsoft.</p>
+<p>Another important aspect of this guideline is ensuring that the HTML used to create a web page is written in accordance with standards.This is what people mean when they talk about valid codeit is HTML that has been run through an automatic
+checker to ensure it meets the language standards.This is another example where <i style='mso-bidi-font-style:normal'>Accessible by Default</i> can have a huge impact.Expression Web, Live Writer, and other Microsoft tools make it easy for content creators to generate valid code and also make it easy to test for and correct validation errors;in some cases, the code produced by these tools automatically validates, requiring nothing further from an end user.</p>
 
